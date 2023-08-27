@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var conta_1 = require("./conta");
+var correntista_1 = require("./correntista");
+var joao = new correntista_1.Correntista('Joao da Silva', '111222333-45');
+var contaJoao = new conta_1.Conta('12345-67890', joao);
+contaJoao.credita(100.0);
+contaJoao.saldo = -10;
+console.log('Saldo do Joao = ', contaJoao.saldo);
+console.log(joao);
